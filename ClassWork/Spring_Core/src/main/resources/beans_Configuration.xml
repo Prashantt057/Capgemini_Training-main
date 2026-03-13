@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+    http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id = "j1" class = "IOC_XMLConfig.Sukhoi30MKI">
+        <property name="jetId" value="2220"/>
+        <property name="SqnName" value="TigerSharks"/>
+    </bean>
+    <bean id = "j2" class = "IOC_XMLConfig.Sukhoi30MKI">
+        <property name="jetId" value="2221"/> // these are called as setter injection
+        <property name="SqnName" value="TigerSharks"/>
+    </bean>
+
+
+</beans>

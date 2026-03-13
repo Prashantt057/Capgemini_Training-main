@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+    http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id = "P1" class = "dependency_injection.Person1">
+        <property name="id" value="2220"/>
+        <property name="name" value="Prashant"/>
+        <property name="aadharList">
+            <list>
+                <ref bean = "a1"/>
+                <ref bean = "a2"/>
+                <ref bean = "a3"/>
+            </list>
+        </property>
+    </bean>
+    <bean id = "a1" class = "dependency_injection.Aadhar">
+        <property name="aadharId" value="2221"/>
+        <property name="aadharName" value="Prashant Singh"/>
+        <property name="DOB" value="12/12/2012"/>
+    </bean>
+    <bean id = "a2" class = "dependency_injection.Aadhar">
+        <property name="aadharId" value="2223"/>
+        <property name="aadharName" value="Vishnu Singh"/>
+        <property name="DOB" value="12/12/2014"/>
+    </bean>
+    <bean id = "a3" class = "dependency_injection.Aadhar">
+        <property name="aadharId" value="2219"/>
+        <property name="aadharName" value="Sundaram Singh"/>
+        <property name="DOB" value="12/12/2015"/>
+    </bean>
+
+
+</beans>
